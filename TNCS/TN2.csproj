@@ -1,0 +1,81 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E96F183B-BC77-4774-9CC4-994945AC7719}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TN2</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressEncoding.cs" />
+    <Compile Include="Assets.cs" />
+    <Compile Include="Base58.cs" />
+    <Compile Include="Http.cs" />
+    <Compile Include="JsonExtensions.cs" />
+    <Compile Include="Matcher.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderBook.cs" />
+    <Compile Include="OrderSide.cs" />
+    <Compile Include="PrivateKeyAccount.cs" />
+    <Compile Include="Transactions\AliasTransaction.cs" />
+    <Compile Include="Transactions\BurnTransaction.cs" />
+    <Compile Include="Transactions\CancelLeasingTransaction.cs" />
+    <Compile Include="Transactions\DataTransaction.cs" />
+    <Compile Include="Transactions\IssueTransaction.cs" />
+    <Compile Include="Transactions\LeaseTransaction.cs" />
+    <Compile Include="Transactions\MassTransferTransaction.cs" />
+    <Compile Include="Transactions\ReissueTransaction.cs" />
+    <Compile Include="Transactions\SetScriptTransaction.cs" />
+    <Compile Include="Transactions\SponsoredFeeTransaction.cs" />
+    <Compile Include="Transactions\Transaction.cs" />
+    <Compile Include="Transactions\TransactionType.cs" />
+    <Compile Include="Transactions\TransferTransaction.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\TN\v15\.suo" />
+    <None Include=".vs\TN\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\TN\v15\Server\sqlite3\storage.ide" />
+    <None Include="WavesCS.csproj.DotSettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SeedWords.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

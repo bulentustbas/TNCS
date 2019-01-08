@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>TNCS</AssemblyTitle>
+    <Product>TNCS_SSYS</Product>
+    <Copyright>Copyright ©  SuperSistem 2018</Copyright>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>net451</TargetFramework>
+    <Version>1.0.0.4</Version>
+    <Authors>TNCS_SSYS</Authors>
+    <Description>NATA Point Asset</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="PCLCrypto" Version="2.0.147" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Blake2Sharp">
+      <HintPath>..\libs\Blake2Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="curve25519">
+      <HintPath>..\libs\curve25519.dll</HintPath>
+    </Reference>
+    <Reference Include="HashLib, Version=2.1.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\libs\HashLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SeedWords.txt" />
+  </ItemGroup>
+</Project>

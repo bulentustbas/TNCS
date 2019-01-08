@@ -1,4 +1,4 @@
-# TNCS
+# TNCS Powered by SuperSistem (https://www.supersistem.com )
 A C# library for interacting with the Turtle Network blockchain
 
 Supports node interaction, offline transaction signing, Matcher orders, and creating addresses and keys.

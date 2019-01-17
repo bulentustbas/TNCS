@@ -20,7 +20,7 @@ For installation via UI Package Manager use this [instruction](https://docs.micr
 Target framework .NET Framework 4.5.1
 ## Documentation
 
-The library utilizes classes to represent various Waves data structures and encoding and serialization methods:
+The library utilizes classes to represent various TN data structures and encoding and serialization methods:
 
 - TNCS.Node
 - TNCS.Order
